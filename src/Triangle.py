@@ -24,8 +24,8 @@ class Triangle(Figure):
         return self.a + self.b + self.c
 
 
-circle = Circle(10)
-triangle = Triangle(12, 13, 14)
-print(triangle.add_Area(circle))
-print(triangle.get_area)
-print(triangle.get_pr)
+#circle = Circle(10)
+#triangle = Triangle(12, 13, 14)
+#print(triangle.add_Area(circle))
+#print(triangle.get_area)
+#print(triangle.get_pr)
