@@ -10,3 +10,4 @@ class Figure:
 
     def add_Area(self, figure):
         return self.get_area + figure.get_area
+
