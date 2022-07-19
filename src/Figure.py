@@ -1,12 +1,12 @@
-a, b, c, h, x, y, z, r = float(input()), float(input()), float(input()), float(input()), float(input()), float(input()), float(input()), float(input())
-
-
-
 class Figure:
 
+    @property
     def get_area(self):
-        return get_area()
+        return True
 
+    @property
     def get_pr(self):
-        return get_pr()
+        return True
 
+    def add_Area(self, figure):
+        return self.get_area + figure.get_area
