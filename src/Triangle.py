@@ -4,8 +4,9 @@ from src.Square import Square
 from src.Rectangle import Rectangle
 from src.Circle import Circle
 
+
 class Triangle(Figure):
-    def __init__(self, a, b, c):
+    def init(self, a, b, c):
         if a + b < c or a + c < b or b + c < a:
             raise ValueError("Сумма двух сторон должны быть больше третьей стороны")
         self.a = a
@@ -25,7 +26,6 @@ class Triangle(Figure):
 
 circle = Circle(10)
 triangle = Triangle(12, 13, 14)
-print(triangle.add_Area(Circle))
+print(triangle.add_Area(circle))
 print(triangle.get_area)
 print(triangle.get_pr)
-
