@@ -2,7 +2,11 @@ from src.Figure import Figure
 
 
 class Rectangle(Figure):
+    NAME = 'Rectangle'
+
     def __init__(self, x, y):
+        if x <= 0 or y <= 0:
+            raise ValueError("Стороны прямоугольника должны быть больше нуля")
         self.x = x
         self.y = y
 
@@ -13,8 +17,3 @@ class Rectangle(Figure):
     @property
     def get_pr(self):
         return 2 * (self.x + self.y)
-
-
-rectangle = Rectangle(10, 15)
-print(rectangle.get_area)
-print(rectangle.get_pr)

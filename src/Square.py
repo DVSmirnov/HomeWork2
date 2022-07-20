@@ -2,7 +2,11 @@ from src.Figure import Figure
 
 
 class Square(Figure):
+    NAME = 'Square'
+
     def __init__(self, z):
+        if z <= 0:
+            raise ValueError("Стороны квадрата должны быть больше нуля")
         self.z = z
 
     @property
@@ -12,8 +16,3 @@ class Square(Figure):
     @property
     def get_pr(self):
         return 4 * self.z
-
-
-square = Square(20)
-print(square.get_area)
-print(square.get_pr)
