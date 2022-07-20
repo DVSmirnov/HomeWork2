@@ -19,13 +19,11 @@ def test_equilateral_triangle():
     assert Triangle(10, 10, 10)
 
 
-def test_right_triangle():
-    assert 9.433981132056603 == sqrt((5 ** 2) + (8 ** 2))
-
-
 def test_negative_triangle():
-    assert Triangle(10, 10, -10)
+    with pytest.raises(ValueError):
+        Triangle(10, 10, -10)
 
 
 def test_negative_triangle_2():
-    assert Triangle(10, 10, 0)
+    with pytest.raises(ValueError):
+        Triangle(10, 10, 0)

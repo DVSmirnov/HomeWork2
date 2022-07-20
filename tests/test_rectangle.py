@@ -12,5 +12,10 @@ def test_creation_rectangle_2():
         assert Rectangle(5, 10)
 
 
-def test_creation_rectangle_2():
+def test_no_creation_rectangle():
+    with pytest.raises(ValueError):
         assert Rectangle(5, -5)
+
+def test_no_creation_rectangle_2():
+    with pytest.raises(ValueError):
+        assert Rectangle(5, 0)
