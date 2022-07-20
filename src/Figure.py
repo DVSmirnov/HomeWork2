@@ -9,7 +9,7 @@ class Figure:
         return True
 
     def add_area(self, figure):
-        isinstance(figure, Figure)
+        if not isinstance(figure, Figure):
             raise ValueError("Передана не геометрическая фигура")
-        return self.get_area + figure.get_area
+        return float(self.get_area) + float(figure.get_area)
 
