@@ -42,3 +42,4 @@ def test_summ_area_5():
     with pytest.raises(ValueError):
         circle = Circle(10)
         assert circle.add_area("str") == circle.get_area + "str".get_area
+

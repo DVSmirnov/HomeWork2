@@ -12,4 +12,3 @@ class Figure:
         if not isinstance(figure, Figure):
             raise ValueError("Передана не геометрическая фигура")
         return float(self.get_area) + float(figure.get_area)
-

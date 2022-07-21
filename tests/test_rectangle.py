@@ -21,6 +21,7 @@ def test_no_creation_rectangle_2():
     with pytest.raises(ValueError):
         assert Rectangle(5, 0)
 
+
 def test_summ_area_16(rectangle):
     rectangle = Rectangle(2, 5)
     assert rectangle.add_area(rectangle) == rectangle.get_area + rectangle.get_area

@@ -18,3 +18,5 @@ class Circle(Figure):
     @property
     def get_pr(self):
         return 2 * pi * self.r
+
+
