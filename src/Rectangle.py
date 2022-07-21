@@ -18,4 +18,3 @@ class Rectangle(Figure):
     def get_pr(self):
         return 2 * (self.x + self.y)
 
-

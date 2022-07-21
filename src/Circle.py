@@ -19,4 +19,3 @@ class Circle(Figure):
     def get_pr(self):
         return 2 * pi * self.r
 
-
