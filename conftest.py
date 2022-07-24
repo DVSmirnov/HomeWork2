@@ -24,3 +24,4 @@ def square():
 @pytest.fixture
 def circle():
     return Circle(25)
+

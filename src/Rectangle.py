@@ -17,4 +17,3 @@ class Rectangle(Figure):
     @property
     def get_pr(self):
         return 2 * (self.x + self.y)
-

@@ -41,4 +41,3 @@ def test_summ_area_10():
     with pytest.raises(ValueError):
         square = Square(7)
         assert square.add_area("str") == square.get_area + "str".get_area
-

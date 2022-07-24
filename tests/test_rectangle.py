@@ -46,4 +46,3 @@ def test_summ_area_20():
     with pytest.raises(ValueError):
         rectangle = Rectangle(2, 5)
         assert rectangle.add_area("str") == rectangle.get_area + "str".get_area
-
