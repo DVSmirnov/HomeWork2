@@ -51,3 +51,4 @@ def test_summ_area_15():
         triangle = Triangle(2, 5, 4)
         assert triangle.add_area("str") == triangle.get_area + "str".get_area
 
+

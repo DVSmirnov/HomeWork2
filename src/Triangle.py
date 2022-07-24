@@ -24,3 +24,4 @@ class Triangle(Figure):
     @property
     def get_pr(self):
         return self.a + self.b + self.c
+

@@ -17,3 +17,4 @@ class Square(Figure):
     def get_pr(self):
         return 4 * self.z
 
+
