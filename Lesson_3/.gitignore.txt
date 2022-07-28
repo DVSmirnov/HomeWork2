@@ -1,1 +1,8 @@
 .venv/
+.idea/
+._pycache_/
+.src/_pycache_/
+.Otus_AQA/
+
+
+
